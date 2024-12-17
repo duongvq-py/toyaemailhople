@@ -5,7 +5,7 @@ get_name_in_email(email_list)
 
 --- nopbai
 00 fork tu bainopmau tren replit tu trang web duoiday 
-   https://github.com/namgivu/toyaemailhople
+   https://github.com/duongvq-py/toyaemailhople/blob/main/s00_bailam.py
 
 01 lam bai vao tep s00_bailam.py, chay Run de co ketqua tatca la 1
 02a tao github repo, mo trinhduyetweb de kiemtra tep s00_bailam.py, va lay diachi/url aka githubbailamurl
