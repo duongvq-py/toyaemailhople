@@ -33,5 +33,21 @@ get_name_in_email([None, 'abb#ccc'])                      | ['ERROR invaid email
 
 #region bailam
 def get_name_in_email(email_list):
-  pass#TODO
+
+    kq = [] 
+    checkKyTu = r'^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$' 
+    for email in email_list: 
+        if email and re.match(checkKyTu, email): 
+            nameEmail = email.split('@')[0] result.append(nameEmail) 
+        else: 
+            result.append('ERROR invalid email')
+    return kq
+
+print(get_name_in_email(['ai-btx@gmail.com']))
+print(get_name_in_email(['user1@gmail.com', 'user2@gmail.com']))
+print(get_name_in_email([]))
+print(get_name_in_email(['abb#ccc']))
+print(get_name_in_email([None]))
+print(get_name_in_email([None, 'abb#ccc']))  
+
 #endregion bailam
