@@ -41,7 +41,7 @@ def get_name_in_email(email_list):
     checkKyTu = r'^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$'
 
     for email in email_list:
-        if email is None:
+        if email is None or  "@" not in email:
             kq.append('ERROR invaid email')
         elif email and re.match(checkKyTu, email):
             nameEmail = email.split('@')[0]
